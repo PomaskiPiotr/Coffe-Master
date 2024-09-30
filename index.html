@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="brand">
+            <img class="logo" src="logo.png" alt="Coffee Masters logo">
+            Coffe Masters
+        </h1>
+    </header>
+    <main class="page">
+        <section class="box order">
+            <h2 class="box-title">ITEMS</h2>
+            <div class="item-container">
+                <ul class="item">
+                    <li class="quantity">1x</li>
+                    <li class="title-list">Cappucino
+                        <ul class="list-product">
+                            <li class="option-list">Light Foam</li>
+                        </ul>
+                    </li>
+                    <li class="price">$6.00</li>
+                </ul>
+                <ul class="item">
+                    <li class="quantity">1x</li>
+                    <li class="title-list">Cappucino
+                        <ul class="list-product">
+                            <li class="option-list">Almond Milk</li>
+                            <li class="option-list">Double Espresso Shot</li>
+                        </ul>
+                    </li>
+                    <li class="price">$5.37</li>
+                </ul>
+                <ul class="item">
+                    <li class="quantity">1x</li>
+                    <li class="title-list">Croissant
+                        <ul class="list-product">
+                            <li class="option-list">Butter</li>
+                        </ul>
+                    </li>
+                    <li class="price">$5.37</li>
+                </ul>
+            </div>
+        </section>
+        <section class="box name-order">
+            <h2 class="box-title">NAME</h2>
+            <div class="input-group">
+                <label class="user-label-input" for="name">Name for order</label>
+                <input type="text" class="user-input" id="name">
+            </div>
+        </section>
+        <section class="box payment">
+            <h2 class="box-title">PAYMENT</h2>
+            <div class="input-group">
+                <label class="user-label-input" for="cn">Card number</label>
+                <input type="text" class="user-input" id="cn">
+            </div>
+            <div class="input-group">
+                <label for="ccv" class="user-label-input">CCV number</label>
+                <input type="text" class="user-input short-input" id="ccv">
+            </div>
+        </section>
+        <section class="total">
+            <ul class="total-table">
+                <div class="table-container">
+                    <li>Subtotal:</li>
+                    <li>$19.27</li>
+                </div>
+                <div class="table-container">
+                    <li>Tax:</li>
+                    <li>$0.96</li>
+                </div>
+                <div class="table-container final-totals">
+                    <li>Total:</li>
+                    <li>$20.23</li>
+                </div>
+            </ul>
+            <button class="button-checkout" type="button">Place order</button>
+        </section>
+    </main>
+</body>
+</html>

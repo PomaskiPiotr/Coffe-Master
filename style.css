@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #efefef;
+}
+
+/* Header */
+
+.main-header {
+    background-color: #43281c;
+    color: #fbf2c0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 0px 1px black;
+}
+
+.logo {
+    height: 30px;
+    position: relative;
+    top: 4px;
+}
+
+.page {
+    display: grid;
+    grid-template-areas: 
+        "order name"
+        "order payment"
+        "total total";
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.order {
+    grid-area: order;
+}
+
+.name-order {
+    grid-area: name;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+/* BOX */
+.box {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 0.5);
+}
+
+/* Order box */
+.box-title {
+    font-size: 16px;
+    color: #885a2d;
+    font-weight: normal;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-label-input {
+    position: absolute;
+    font-size: 11px;
+    color: #885a2d;
+    background-color: #eee1d5;
+    top: -8px;
+    left: 30px;
+    padding: 0 2px;
+}
+
+.user-input {
+    width: 100%;
+    border: 2px solid #885a2d;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    text-indent: 15px;
+}
+
+.short-input {
+    max-width: 200px;
+}
+
+/* Table data */
+
+.total {
+    grid-area: total;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total-table {
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 30px;
+}
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.table-container li {
+    padding: 10px;
+}
+
+.final-totals {
+    font-weight: bold;
+}
+
+.button-checkout {
+    border: none;
+    background-color: #deb993;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.item li {
+    list-style: none;
+    padding: 0;
+}
+
+.list-product {
+    padding: 0;
+    color: #B08968;
+    font-size: 14px;
+    padding: 5px 0;
+    font-weight: normal;
+}
+
+.item-container {
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 2px solid #DDB892;
+    margin: 0;
+}
+
+.title-list {
+    text-align: left;
+    width: 100%;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.item:last-child {
+    border: none;
+}
+
+.price {
+    font-weight: bold;
+    margin-right: 5px;
+}
